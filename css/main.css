@@ -25,10 +25,14 @@ html, body {
 body {
     font-size: 18px;
     font-family:'Noto Sans KR', sans-serif;
-    background: #333;
     color: #fff;
     background-image: url(../img/fin_back04.jpg);
+    width: 100%;
+    height: 100vh;
     background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    
 
 }
 
@@ -65,24 +69,26 @@ body {
 
 
 #gnb {
-    /* margin-top: 3%; */
-    padding-top: 30px;
+    padding: 0 auto;
+    margin-top: 1%;
+    /* padding-top: 30px; */
     margin-left: 65%;
-    /* margin-left: 58%; */
     /* border: 1px solid yellow; */
+    display: inline-block;
 }
 
 #gnb > ul > li {
     display: inline-block;
-    font-size: 2em;
+    
 }
 
 
 #gnb ul li a {
-    font-size: 24px;
+    font-size: 1.5em;
     font-family:'Noto Sans KR', sans-serif;
     color: #fff;
     margin-right: 50px;
+
     /* color: #C90B0B; */
 }
 
@@ -126,7 +132,7 @@ body {
 
 .sns > li {
     display: inline-block;
-    width: 80px;
+    width: 15%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -160,7 +166,30 @@ body {
 /* 모바일 기기일때 배경 구도 바꾸기 */
 @media screen and (max-width: 768px) {
     body {
+      /* background-image: url(../img/fin_back04.jpg); */
       background-position: right 0;
+      width: 100%;
+      height: 100hv;
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+    
+    }
+
+    #gnb {
+        /* border: 1px solid yellow; */
+        display: inline;
+    }
+    
+    #gnb > ul > li {
+        display: inline;
+        
+        
+    }
+    #gnb > ul > li > a {
+        /* display: inline-block; */
+        font-size: 1em;
+        margin-right: 2.5%;
+        margin-left: 3.5%;
     }
   }
 
